@@ -32,7 +32,7 @@
   <!-- build:css({.tmp,app}) styles/main.css -->
   <link rel="stylesheet" href="styles/main.css" />
   <!-- endbuild -->
-      <script>
+      <!-- <script>
     var _prum = [['id', '54f86193abe53dc834936ffe'],
                  ['mark', 'firstbyte', (new Date()).getTime()]];
     (function() {
@@ -42,7 +42,7 @@
         p.src = '//rum-static.pingdom.net/prum.min.js';
         s.parentNode.insertBefore(p, s);
     })();
-    </script>
+    </script> -->
 </head>
 <body ng-app="frontendApp">
 <!--[if lt IE 7]>
@@ -124,20 +124,20 @@
       </div>
       <div class="col-md-4 col-md-offset-3 text-right">
         <div class="fb-like" data-href="http://gazetteer.hk" data-layout="button_count" data-action="like" data-show-faces="true" data-share="true"></div>
-        <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://gazetteer.hk" data-text="Check out these cool visualizations about Hong Kong's neighborhoods at Gazetteer HK">Tweet</a>
-        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script>
+        <!-- <a href="https://twitter.com/share" class="twitter-share-button" data-url="http://gazetteer.hk" data-text="Check out these cool visualizations about Hong Kong's neighborhoods at Gazetteer HK">Tweet</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+'://platform.twitter.com/widgets.js';fjs.parentNode.insertBefore(js,fjs);}}(document, 'script', 'twitter-wjs');</script> -->
         <div class="g-plus" data-action="share" data-href="http://gazetteer.hk" data-annotation="bubble"></div>
       </div>
     </div>
   </div>
 </div>
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
-  ga('create', 'UA-47542275-2', 'auto');
-  ga('create', 'UA-48536294-9', 'auto',{'name': 'code4hk','siteSpeedSampleRate': 100});
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  //   (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  //   m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  // ga('create', 'UA-47542275-2', 'auto');
+  // ga('create', 'UA-48536294-9', 'auto',{'name': 'code4hk','siteSpeedSampleRate': 100});
 
   //      ga('send', 'pageview');
 </script>
@@ -152,7 +152,7 @@
     Or, grunt build will change this index.html
     -->
 
-    <script src="http://maps.google.com/maps/api/js?v=3.2&sensor=false"></script>
+    <script src="http://maps.google.com/maps/api/js?v=3.26&key=AIzaSyA-ZjRit7t4ZG5GVGv_6XQLdXDhIrYWxmg"></script>
 
     <!-- build:js scripts/vendor.js -->
     <!-- bower:js -->
@@ -179,8 +179,6 @@
     <script src="bower_components/topojson/topojson.js"></script>
     <script src="bower_components/colorbrewer/colorbrewer.js"></script>
     <script src="bower_components/ng-table/ng-table.js"></script>
-    <script src="bower_components/boomerang/boomerang.js"></script>
-    <script src="bower_components/boomerang/plugins/rt.js"></script>
 
     <!-- endbower -->
     <!-- endbuild -->
@@ -202,23 +200,24 @@
     <script src="scripts/controllers/profiles.js"></script>
 
     <!-- endbuild -->
-
-    <script>(function(d, s, id) {
+<!-- 
+    <script>
+    (function(d, s, id) {
       var js, fjs = d.getElementsByTagName(s)[0];
       if (d.getElementById(id)) return;
       js = d.createElement(s); js.id = id;
       js.src = "//connect.facebook.net/en_US/all.js#xfbml=1&appId=626544927417839";
       fjs.parentNode.insertBefore(js, fjs);
     }(document, 'script', 'facebook-jssdk'));</script>
-
-    <script type="text/javascript">
+ -->
+    <!-- <script type="text/javascript">
       (function() {
         var po = document.createElement('script'); po.type = 'text/javascript'; po.async = true;
         po.src = 'https://apis.google.com/js/platform.js';
         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(po, s);
       })();
     </script>
-
+ -->
 <link rel="stylesheet" type="text/css" href="http://code4hk.github.io/commons/code4hk-badge.css">
 <span class="code4hk-badge" style="z-index:2000"><a id="code4hk-badge-link" href="http://code4.hk" target="_blank"> Code for Hong Kong </a></span>
 

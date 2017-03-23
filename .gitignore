@@ -19,3 +19,4 @@ backend/lib/*
 backend/index.yaml
 
 .grunt
+npm-debug.log

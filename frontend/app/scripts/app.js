@@ -70,25 +70,6 @@ angular.module('frontendApp', [
     });
 
 
-    BOOMR.init({
-      beacon_url: "images/beacon.gif",
-      BW: {
-        enabled: false
-      }
-    });
-
-    BOOMR.subscribe('before_beacon', trackInAnalytics);
-    var pageType = "homepage"; // customize this
-    var pageTitle = "Measuring pageSpeed in GA"; // customize this
-    function trackInAnalytics(beacon) {
-      try {
-        if (!beacon.t_done || beacon.t_done < 0) return;
-        var timeTaken = beacon.t_done;
-        _gaq.push(['_trackEvent', pageType + 'PageLoad', getBucket(
-          timeTaken), pageTitle, timeTaken]);
-      } catch (e) {}
-    }
-
     function getBucket(timeTaken) {
       var bucketString;
       var bucket = [1000, 1500, 2000, 2500, 3000, 3500, 4000, 4500, 5000,

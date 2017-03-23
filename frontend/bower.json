@@ -27,7 +27,6 @@
     "angular-busy": "~2.2.0",
     "angulartics": "https://github.com/vincentlaucy/angulartics.git",
     "leaflet-plugins": "~1.0.1",
-    "boomerang": "*"
   },
   "devDependencies": {
     "angular-mocks": "1.2.15",

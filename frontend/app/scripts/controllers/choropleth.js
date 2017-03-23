@@ -7,7 +7,6 @@ angular.module('frontendApp')
 
 
       $scope.refresh = function() {
-        BOOMR.plugins.RT.startTimer("t_done");
         var startTime = new Date().getTime();
         var query = new CensusAPI.Query($scope.selectedIndicator.params);
 
@@ -15,7 +14,6 @@ angular.module('frontendApp')
           var d = $scope.selectedIndicator.parser(response);
           $scope.mapConfig = $scope.selectedIndicator.config;
           $scope.areaData = d;
-          BOOMR.plugins.RT.done();
           $analytics.eventTrack('loadChoropleth', {
             timing: true,
             category: 'interactionSpeed',

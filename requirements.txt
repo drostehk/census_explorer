@@ -20,6 +20,6 @@ pytz==2014.4
 requests==2.3.0
 sh==1.09
 six==1.7.3
-uWSGI==2.0.2
+uWSGI==2.0.14
 wsgiref==0.1.2
 xlrd==0.9.2
